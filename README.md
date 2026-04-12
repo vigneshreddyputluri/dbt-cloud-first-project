@@ -1,1 +1,0 @@
-# dbt-cloud-first-project
