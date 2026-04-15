@@ -5,3 +5,10 @@ models:
   - name: secondTable
     config: 
       materialized: table
+
+sources: 
+  - name: "sf1_lineitem"
+    database: "SNOWFLAKE_SAMPLE_DATA"
+    schema: "TPCH_SF1"
+    tables: 
+      - name: "LINEITEM"
