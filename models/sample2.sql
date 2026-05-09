@@ -1,0 +1,2 @@
+SELECT MAX(S.PAYMENT_DATE) AS MAX_DATE 
+FROM {{ref('orderstb')}} S 
