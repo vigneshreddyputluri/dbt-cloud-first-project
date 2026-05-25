@@ -4,10 +4,10 @@
     incremental_strategy='merge'
 ) }}
 
-{%- set ds = ref('inter_drop_ship') -%}
-{%- set cf = ref('inter_cust_fram') -%}
-{%- set mtmk = ref('inter_mtmk_sales') -%}
-{%- set rtk = ref('inter_retake') -%}
+{%- set ds = ref('int_drop_ship') -%}
+{%- set cf = ref('int_cust_fram') -%}
+{%- set mtmk = ref('int_mtmk_sales') -%}
+{%- set rtk = ref('int_retake') -%}
 
 select *
 from {{ cf }} cf 
