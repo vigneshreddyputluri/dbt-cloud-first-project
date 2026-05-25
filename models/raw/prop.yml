@@ -1,0 +1,29 @@
+sources: 
+  - name: "sf1000"
+    database: "SNOWFLAKE_SAMPLE_DATA"
+    schema: "TPCH_SF1000"
+    tables: 
+      - name: "LINEITEM"
+      - name: "ORDERS"
+
+  - name: "fetching_layer_schema"
+    database: "DBT_DATABASE"
+    schema: "DBT_VIGNESH_PUTLURI"
+    tables:
+        - name: "FETCHINGLAYER" 
+
+  - name: "gbq_db"
+    database: "project-3e6f20e7-e9b9-45bf-a77"
+    schema: "dbt_gbq_dataset"
+    tables:
+        - name: "drop_ship_raw"  
+
+  - name: "raw"
+    database: "DBT_DATABASE"
+    schema: "RAW"
+    tables:
+        - name: "drop_ship"
+        - name: "retake"
+        - name: "cust_fram"
+        - name: "mtmk_sales" 
+        
